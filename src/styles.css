@@ -480,8 +480,8 @@ textarea {
 }
 
 form select {
-  border-right: 16px solid var(--light-blue);
-  border-left: 16px solid var(--light-blue);
+  border-right: 13px solid var(--light-blue);
+  border-left: 13px solid var(--light-blue);
   height: 3rem;
   text-transform: capitalize;
 }
