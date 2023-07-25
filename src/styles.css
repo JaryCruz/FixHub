@@ -481,6 +481,7 @@ textarea {
 
 form select {
   border-right: 16px solid var(--light-blue);
+  height: 3rem;
   text-transform: capitalize;
 }
 
@@ -956,6 +957,11 @@ form select {
 }
 
 @media (max-width: 400px) {
+  .medium-container,
+  .large-container {
+    margin: 1rem auto;
+  }
+
   .suggestions-filter label {
     font-size: 0.8rem;
   }
@@ -964,8 +970,7 @@ form select {
     font-size: 0.8rem;
   }
 
-  .replies-list .btn-add,
   .comment-reply .btn-add {
-    min-width: 7.85rem;
+    min-width: 6.8rem;
   }
 }
