@@ -650,18 +650,20 @@ form select {
   flex: 1;
   font-size: 1rem;
   margin-top: 4px;
+  color: var(--black);
+  border-bottom: 5px solid var(--light-blue);
 }
 
 .timeline-status-toggle button:first-child.active {
-  border-bottom: 5px solid var(--orange);
+  border-bottom-color: var(--orange);
 }
 
 .timeline-status-toggle button:nth-child(2).active {
-  border-bottom: 5px solid var(--pink);
+  border-bottom-color: var(--pink);
 }
 
 .timeline-status-toggle button:last-child.active {
-  border-bottom: 5px solid var(--blue);
+  border-bottom-color: var(--blue);
 }
 
 .timeline-body {
