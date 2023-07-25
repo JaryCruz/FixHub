@@ -966,6 +966,6 @@ form select {
 
   .replies-list .btn-add,
   .comment-reply .btn-add {
-    width: 7.85rem;
+    min-width: 7.85rem;
   }
 }
