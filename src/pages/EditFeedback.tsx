@@ -48,7 +48,7 @@ export function EditFeedback() {
             <span>Choose a category for your feedback</span>
             <select ref={categoryRef} required defaultValue={feedback.category}>
               {CATEGORIES.map(category => (
-                <option value={category}>{category}</option>
+                <option key={category} value={category}>{category}</option>
               ))}
             </select>
           </label>

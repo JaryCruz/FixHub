@@ -770,6 +770,10 @@ form select {
     scale: 0.9;
   }
 
+  .btn-back {
+    scale: 1;
+  }
+
   h3 {
     font-size: 1.1rem;
   }
