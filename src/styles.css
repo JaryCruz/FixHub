@@ -19,7 +19,7 @@
   --white: hsl(0, 100%, 100%);
   --black: hsl(0, 0%, 0%);
   --orange: hsl(31, 100%, 50%);
-  --light-blue: hsl(230, 60%, 98%);
+  --light-blue: hsl(230, 60%, 96%);
 }
 
 body {
@@ -947,6 +947,10 @@ form select {
   .no-suggestions p {
     width: 100%;
   }
+
+  .profile-name {
+    margin: 0.6rem auto 0 0.7rem;
+  }
 }
 
 @media (max-width: 400px) {
@@ -958,7 +962,8 @@ form select {
     font-size: 0.8rem;
   }
 
-  .replies-list .btn-add {
-    width: 7.6rem;
+  .replies-list .btn-add,
+  .comment-reply .btn-add {
+    width: 7.85rem;
   }
 }
