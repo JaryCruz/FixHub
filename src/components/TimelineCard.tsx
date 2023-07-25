@@ -14,7 +14,7 @@ export function TimelineCard({
   description, 
   commentsCount, 
 }: TimelineCardProps) {
-  const { toggleFeedbackItemVote } = useFeedbacks()
+  const { toggleFeedbackVote } = useFeedbacks()
 
   return (
     <div className={`timeline-card ${status ?? ''}`}>
@@ -30,7 +30,7 @@ export function TimelineCard({
       <div className="timeline-card-footer">
         <button 
           className={`btn-upvote sm ${upvoted ? 'voted' : ''}`}
-          onClick={() => toggleFeedbackItemVote(id)}
+          onClick={() => toggleFeedbackVote(id)}
         >
           <img src={upIcon} alt="" />
           <p>{upvotes}</p>
