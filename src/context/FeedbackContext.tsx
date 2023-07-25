@@ -3,7 +3,6 @@ import { ReactNode, createContext, useContext, useState } from 'react'
 import { Comment } from '../components/CommentsList'
 import { STATUS } from '../data/constants'
 import { v4 as uuidv4 } from 'uuid'
-import { useLocalStorage } from '../hooks/useLocalStorage'
 
 type FeedbackProviderProps = {
   children: ReactNode
@@ -40,7 +39,7 @@ export function useFeedbacks() {
 }
 
 export function FeedbackProvider({ children }: FeedbackProviderProps) { 
-  const [feedbackItems, setFeedbackItems] = useLocalStorage<FeedbackItem[]>('feedbacks', data.productRequests)
+  const [feedbackItems, setFeedbackItems] = useState<FeedbackItem[]>(data.productRequests)
   const [categoryFilter, setCategoryFilter] = useState('All')
 
   function toggleFeedbackVote(id: string) {
