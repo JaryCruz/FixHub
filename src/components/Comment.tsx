@@ -18,11 +18,13 @@ export function Comment({ content, user, replies, id: commentId }: CommentProps)
   
   return (
     <div className="comment-card">
-      <div>
-        <img src={user.image} alt="" />
-        <div className="profile-name">
-          <h4>{user.name}</h4>
-          <span>@{user.username}</span>
+      <div className='comment-header-container'>
+        <div className='comment-header'>
+          <img src={user.image} alt="" />
+          <div className="profile-name">
+            <h4>{user.name}</h4>
+            <span>@{user.username}</span>
+          </div>
         </div>
         <button className="btn-reply" onClick={() => setShowReplyInput(prev => !prev)}>Reply</button>
       </div>

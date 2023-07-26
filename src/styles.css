@@ -19,7 +19,7 @@
   --white: hsl(0, 100%, 100%);
   --black: hsl(0, 0%, 0%);
   --orange: hsl(31, 100%, 50%);
-  --light-blue: hsl(230, 60%, 96%);
+  --light-blue: hsl(230, 100%, 97%);
 }
 
 body {
@@ -553,12 +553,6 @@ form select {
   width: 2.5rem;
 }
 
-.comment-card > div:first-child {
-  display: flex;
-  align-items: center;
-  margin-bottom: 0.4rem;
-}
-
 .comment-card textarea {
   flex-grow: 1;
   font-size: 0.9rem;
@@ -580,6 +574,18 @@ form select {
 .comment-card p span {
   color: var(--pink);
   font-weight: bold;
+}
+
+.comment-header-container {
+  margin-bottom: 0.5rem;
+}
+
+.comment-header,
+.comment-header-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
 }
 
 .profile-name {
