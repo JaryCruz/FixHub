@@ -436,9 +436,10 @@ input {
   border: none;
   background-color: var(--light-blue);
   border-radius: 4px;
-  padding: 0.8rem 1rem;
+  padding: 0.7rem .9rem;
   font-size: 1rem;
   color: var(--black);
+  resize: none;
 }
 
 textarea:focus,
@@ -475,13 +476,9 @@ label span {
   color: var(--text-color);
 }
 
-textarea {
-  resize: none;
-}
-
 form select {
-  border-right: 13px solid var(--light-blue);
-  border-left: 13px solid var(--light-blue);
+  border-right: 8px solid var(--light-blue);
+  border-left: 8px solid var(--light-blue);
   height: 3rem;
   text-transform: capitalize;
 }
@@ -551,6 +548,7 @@ form select {
   border-radius: 50%;
   height: 2.5rem;
   width: 2.5rem;
+  object-fit: cover;
 }
 
 .comment-card textarea {
